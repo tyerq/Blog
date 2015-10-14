@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>signup | Blog</title>
+</head>
+<body>
+    <div class="errors"/>
+        <ul>
+            <li tal:repeat="err errors" tal:content="err"/>
+        </ul>
+    <div>
+    <div>
+        <form action="/signup" method="post">
+            <input type="text" placeholder="username" name="username" value="${username}" required/>*
+            <input type="text" placeholder="name" name="name" value="${name}"/>
+            <input type="password" placeholder="password" name="passw"" required/>*
+            <input type="password" placeholder="repeat password" name="repeat" required/>*
+            <input type="email" placeholder="email" name="email" value="${email}"/>
+            <input type="submit" value="sign up">
+        </form>
+    </div>
+    <div>
+        already have an account? <a href="/login">log in</a>
+    </div>
+</body>
+</html>

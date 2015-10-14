@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>login | Blog</title>
+</head>
+<body>
+    <div class="errors"/>
+        <ul>
+            <li tal:repeat="err errors" tal:content="err"/>
+        </ul>
+    <div>
+    <div>
+        <form action="/login" method="post">
+            <input type="text" placeholder="username" name="username" value="${username}"/>
+            <input type="password" placeholder="password" name="passw"/>
+            <input type="submit" value="log in">
+        </form>
+    </div>
+    <div>
+        don't have an account? <a href="/signup">sign up</a>
+    </div>
+</body>
+</html>

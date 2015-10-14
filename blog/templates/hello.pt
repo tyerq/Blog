@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>hello, ${name} | Blog</title>
+</head>
+<body>
+    <div>
+        hello, ${name}! nice to see you! what's on your mind?
+        <ul>
+            <li>you can write a new post <a href="/post">here</a></li>
+            <li>you can see your posts <a href="/user/${username}">here</a></li>
+            <li>you can see all posts <a href="/posts">here</a></li>
+        </ul>
+    </div>
+    <div>
+        <a href="/logout">log out</a>
+    </div>
+</body>
+</html>
